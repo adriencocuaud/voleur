@@ -34,8 +34,8 @@
 
 #footer {
     background-color: var(--bg);
-    font-family: "lato";
-    color: black;
+    font-family: "lato" !important;
+    color: black !important;
     /* font-size: ; */
     text-align: center;
 }
@@ -139,8 +139,8 @@ table, td, th {
 
 p.tableblock {
     font-family: "rye" !important;
-    font-size: var(--font-size);
-    color: black;
+    font-size: var(--font-size) !important;
+    color: black !important;
 }
 
 p.tableblock>code:only-child {
@@ -192,6 +192,7 @@ a:hover {
 #preamble>.sectionbody>.paragraph:first-of-type p {
     font-family: "rye" !important;
     font-size: 1.3rem !important;
+    color:black !important;
 }
 
 .quoteblock blockquote::before {
