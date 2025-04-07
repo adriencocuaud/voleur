@@ -19,7 +19,7 @@
             <div class="sectionbody">
                 <div class="paragraph">
                     <p><span class="image right"><img src="le voleur.png" alt="cover" width="400"></span></p>
-                    <p>Classic Cards Game For <span class="chiffre">2</span> to <span class="chiffre">5</span> Players</p>
+                    <p>Playing Cards Game For 2 to 5 Players</p>
                 </div>
             </div>
             <div class="sect1">
@@ -35,7 +35,7 @@
                     <h2 id="_objective"><code>Objective</code></h2>
                     <div class="paragraph">
                         <p>Score as many points as possible over several rounds of trick-taking. <br>
-                            Each round, players compete with a hand of four cards, aiming to win the final trick. <br>
+                            Each round, players compete with a hand of four cards, aiming to win the <strong>final trick.</strong><br>
                             Points are earned based on poker-style combinations in the player's hand.
                         </p>
                     </div>
@@ -53,7 +53,7 @@
                                 <p>Shuffle the deck and deal six cards face-down to each player.</p>
                             </li>
                             <li>
-                                <p>Players look at their hand, then discard two of their cards.</p>
+                                <p>Players look at their hand, then discard <strong>two</strong> of their cards.</p>
                             </li>
                             <li>
                                 <p>Afterwards, reveal the top card of the deck to determine the trump suit for the round.</p>
@@ -73,11 +73,11 @@
 
                         <p>The winner of a trick leads the next one, opponents must follow suit if possible.
                             If they cannot, they must play a trump card; Otherwise, they can play any card.
-                            If no trump card is played, the highest card in the <strong>lead suit</strong> wins the trick.</p>
+                            If no trump card is played, the highest card in the <strong>lead</strong> suit wins the trick.</p>
 
                         <p>Tricks are not collected, players keep their played cards face-up in front of them.
                             Play continues until the fourth trick is won, which grants a scoring bonus.
-                            Then each player gathers their four respective cards for scoring.
+                            Then each player gathers their four <strong>respective</strong> cards for scoring.
                         </p>
                         <details>
                             <summary>Exception</summary>
@@ -219,30 +219,15 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="paragraph">
+                    <!-- <div class="paragraph">
                         <p class="conclusion">Combinations Sheet</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <footer id="footer">
-                game designed by Adrien Cocuaud under CC BY-NC-ND 4.0 Licence
+                game designed by Adrien Cocuaud under CC BY-NC 4.0 Licence
             </footer>
-
-            <script>
-                const details = document.getElementById('myDetails');
-                const summary = details.querySelector('summary');
-                const closedText = "Details";
-                const openText = "During the first trick, if no trump card is played:";
-
-                details.addEventListener('toggle', function () {
-                    if (details.open) {
-                        summary.textContent = openText;
-                    } else {
-                        summary.textContent = closedText;
-                    }
-                });
-            </script>
 </body>
 
 </html>

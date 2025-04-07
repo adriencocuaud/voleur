@@ -5,17 +5,13 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Macondo&display=swap); */
 /* @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Modern+Antiqua&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Port+Lligat+Slab&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap');
 /* @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Macondo&family=Modern+Antiqua&display=swap'); */
 /* @import url(//fonts.googleapis.com/css?family=Noto+Sans); */
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Special+Elite&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap');
 
 /* CUSTOMISATIONS */
 /* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
@@ -64,9 +60,10 @@ img {
 }
 
 strong {
-    font-style: italic;
+    font-style: normal;
     font-weight: normal;
-    font-size: 1.65rem;
+    /* font-size: 1.6rem; */
+    color: white;
 }
 
 .title {
@@ -193,7 +190,7 @@ a:hover {
 }
 
 #preamble>.sectionbody>.paragraph:first-of-type p {
-    font-family: "im fell english sc" !important;
+    font-family: "rye" !important;
     font-size: 1.3rem !important;
 }
 
