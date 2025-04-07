@@ -5,229 +5,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Asciidoctor 2.0.23">
-    <link rel="stylesheet" href="gold.css">
+    <link rel="stylesheet" href="voleur-style.css">
     <title>VOLEUR</title>
 </head>
 
-<body class="article">
+<body>
     <div id="header">
-        <h1><code style="font-weight: 400;">VOL<i>EUR</i>&nbsp;</code></h1>
+        <h1><code>VOL<i>EUR</i>&nbsp;</code></h1>
     </div>
     <div id="content">
-        <div id="preamble">
+        <div class="sectionbody">
+            <p><span class="image right"><img src="le voleur.webp" alt="cover" width="400"></span></p>
+            <p class="game-subtitle">Playing Cards Game For 2 to 5 Players</p>
+            <p class="intro">After a long day of misdeeds, it's time to unwind with your familiar accomplices.
+                Brace yourself for a wild showdown of cards, only with a worthy hand will you steal victory.</p>
+        </div>
+        <div class="section">
             <div class="sectionbody">
-                <div class="paragraph">
-                    <p><span class="image right"><img src="le voleur.png" alt="cover" width="400"></span></p>
-                    <p style="color:black">Playing Cards Game For 2 to 5 Players</p>
-                </div>
+                <h2 id="objective"><code>Objective</code></h2>
+                <p>Score as many points as possible over several rounds of trick-taking. </p>
+                <p>Each round, players compete with a hand of four cards, aiming to win the <strong>final trick.</strong></p>
+                <p>Points are earned based on poker-style combinations in the player's hand.</p>
             </div>
-            <div class="sect1">
-                <div class="sectionbody">
-                    <div class="paragraph">
-                        <p class="intro">After a long day of misdeeds, it's time to unwind with your familiar accomplices.
-                            Brace yourself for a wild showdown of cards <span style="font-weight: bold;">−</span> only with a worthy hand will you steal victory.</p>
-                    </div>
-                </div>
+        </div>
+        <div class="section">
+            <h2 id="setup"><code>Game Setup</code></h2>
+            <div class="sectionbody">
+                <ul>
+                    <li>
+                        <p>Prepare a <span class="chiffre">52-</span>cards deck, ranked from <span class="chiffre">2</span> to Ace and a way to keep score.</p>
+                    </li>
+                    <li>
+                        <p>Shuffle the deck and deal six cards face-down to each player.</p>
+                    </li>
+                    <li>
+                        <p>Players look at their hand, then discard <strong>two</strong> of their cards.</p>
+                    </li>
+                    <li>
+                        <p>Afterwards, reveal the top card of the deck to determine the trump suit for the round.</p>
+                    </li>
+                </ul>
             </div>
-            <div class="sect1">
-                <div class="sectionbody">
-                    <h2 id="_objective"><code>Objective</code></h2>
-                    <div class="paragraph">
-                        <p>Score as many points as possible over several rounds of trick-taking. <br>
-                            Each round, players compete with a hand of four cards, aiming to win the <strong>final trick.</strong><br>
-                            Points are earned based on poker-style combinations in the player's hand.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="sect1">
-                <h2 id="_setup"><code>Game Setup</code></h2>
-                <div class="sectionbody">
-                    <div class="ulist">
-                        <ul>
-                            <li>
-                                <p>Prepare a <span class="chiffre">52-</span>cards deck, ranked from <span class="chiffre">2</span> to Ace and a way to keep score.</p>
-                            </li>
-                            <li>
-                                <p>Shuffle the deck and deal six cards face-down to each player.</p>
-                            </li>
-                            <li>
-                                <p>Players look at their hand, then discard <strong>two</strong> of their cards.</p>
-                            </li>
-                            <li>
-                                <p>Afterwards, reveal the top card of the deck to determine the trump suit for the round.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="sect1">
-                <h2 id="_round"><code>Round Overview</code></h2>
-                <div class="sectionbody">
-                    <div class="paragraph">
-                        <p>A round consist of four tricks. For the first trick, players play one card simultaneously.
-                            The Player with the highest trump card wins the trick.
-                            If no trump cards are played, the <strong>single</strong> hightest-ranked card wins the trick, regardless of suit.
-                        </p>
+        </div>
+        <div class="section">
+            <h2 id="round"><code>Round Overview</code></h2>
+            <div class="sectionbody">
+                <p>A round consist of four tricks. For the first trick, players play one card simultaneously.
+                    The Player with the highest trump card wins the trick.
+                    If no trump cards are played, the <strong>single</strong> hightest-ranked card wins the trick, regardless of suit.
+                </p>
 
-                        <p>The winner of a trick leads the next one, opponents must follow suit if possible.
-                            If they cannot, they must play a trump card; Otherwise, they can play any card.
-                            If no trump card is played, the highest card in the <strong>lead</strong> suit wins the trick.</p>
+                <p>The winner of a trick leads the next one, opponents must follow suit if possible.
+                    If they cannot, they must play a trump card; Otherwise, they can play any card.
+                    If no trump card is played, the highest card in the <strong>lead</strong> suit wins the trick.</p>
 
-                        <p>Tricks are not collected, players keep their played cards face-up in front of them.
-                            Play continues until the fourth trick is won, which grants a scoring bonus.
-                            Then each player gathers their four <strong>respective</strong> cards for scoring.
-                        </p>
-                        <details>
-                            <summary>Exception</summary>
-                            <p>In the first trick, if no trump cards are played and all cards have the same rank, the trick is a draw, and players start another trick simultaneously.</p>
-                        </details>
-                    </div>
-                </div>
+                <p>Tricks are not collected, players keep their played cards face-up in front of them.
+                    Play continues until the fourth trick is won, which grants a scoring bonus.
+                    Then each player gathers their four <strong>respective</strong> cards for scoring.
+                </p>
+                <h3><code>Exception</code></h3>
+                <p class="exception">In the first trick, if no trump cards are played and all cards have the same rank, the trick is a draw, and players start another trick simultaneously.</p>
             </div>
+        </div>
 
-            <div class="sect1">
-                <h2 id="_scoring"><code>Scoring</code></h2>
-                <div class="sectionbody">
-                    <div class="paragraph">
-                        <p>To earn points, players must have one of the following four-cards combinations in their hand:</p>
-                    </div>
-                    <table class="tableblock">
-                        <colgroup>
-                            <col style="width: 30%;">
-                            <col style="width: 10%;">
-                            <col style="width: 30%;">
-                        </colgroup>
-                        <tbody>
-                            <tr style="border-bottom: 1px solid black;">
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock" style="color:black">Basic Combination</p>
-                                </td>
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Points</p>
-                                </td>
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Special Combination</p>
-                                </td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid black;">
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Pair<br>7<span style="font-size: 1.25em">♠</span>7<span style="font-size: 1.25em">♦</span></p>
-                                </td>
-                                <td class="tableblock halign-center valign-center">
-                                    <p class="tableblock" style="font-size: 2.5em">2</p>
-                                </td>
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Double&ensp;Pair<br>7<span style="font-size: 1.25em">♠</span>7<span style="font-size: 1.25em">♦</span>K<span style="font-size: 1.25em">♠</span>K<span style="font-size: 1.25em">♣</span></p>
-                                </td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid black;">
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Small&ensp;Run<br>9<span style="font-size: 1.2em">♥</span>10<span style="font-size: 1.25em">♦</span>J<span style="font-size: 1.25em">♣</span></p>
-                                </td>
-                                <td class="tableblock halign-center valign-center">
-                                    <p class="tableblock" style="font-size: 2.5em">3</p>
-                                </td>
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Small&ensp;Sequence<br>9<span style="font-size: 1.2em">♥</span>10<span style="font-size: 1.2em">♥</span>J<span style="font-size: 1.2em">♥</span></p>
-                                </td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid black;">
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Double&ensp;Run<br>9<span style="font-size: 1.2em">♥</span>10<span style="font-size: 1.25em">♦</span>J<span style="font-size: 1.25em">♣</span>J<span style="font-size: 1.2em">♥</span></p>
-                                </td>
-                                <td class="tableblock halign-center valign-center">
-                                    <p class="tableblock" style="font-size: 2.5em">4</p>
-                                </td>
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Double&ensp;Sequence<br>9<span style="font-size: 1.2em">♥</span>10<span style="font-size: 1.2em">♥</span>10<span style="font-size: 1.25em">♣</span>J<span style="font-size: 1.25em">♣</span></p>
-                                </td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid black;">
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Long&ensp;Run<br>3<span style="font-size: 1.25em">♠</span>4<span style="font-size: 1.25em">♠</span>5<span style="font-size: 1.25em">♦</span>6<span style="font-size: 1.25em">♣</span></p>
-                                </td>
-                                <td class="tableblock halign-center valign-center">
-                                    <p class="tableblock" style="font-size: 2.5em">5</p>
-                                </td>
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Long&ensp;Sequence<br>3<span style="font-size: 1.25em">♦</span>4<span style="font-size: 1.25em">♦</span>5<span style="font-size: 1.25em">♦</span>6<span style="font-size: 1.25em">♦</span></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Trio<br>Q<span style="font-size: 1.25em">♠</span>Q<span style="font-size: 1.25em">♣</span>Q<span style="font-size: 1.25em">♦</span></p>
-                                </td>
-                                <td class="tableblock halign-center valign-center">
-                                    <p class="tableblock" style="font-size: 2.5em">6</p>
-                                </td>
-                                <td class="tableblock halign-center valign-top">
-                                    <p class="tableblock">Quad<br>Q<span style="font-size: 1.25em">♠</span>Q<span style="font-size: 1.25em">♣</span>Q<span style="font-size: 1.25em">♦</span>Q<span style="font-size: 1.2em">♥</span></p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="paragraph">
-                        <p>If a player have a basic combination, he scores the points indicated above.<br>
-                            With a special combination, he <strong>steals</strong> the same number of points from any opponent.</p>
-                        <p>The winner of the last trick gains a special privilege:
-                            he is the last to score and may replace <strong>one</strong> of his four cards with a card from an opponent's hand or with the trump card.</p>
-                    </div>
-                </div>
-                <div class="sectionbody">
-                    <div class="paragraph">
-                        <h3><code>Scoring Situations</code></h3>
-                        <div class="ulist">
-                            <ul>
-                                <li>
-                                    <p>In any combination, the Ace can be used either as a One or following the King.</p>
-                                </li>
-                                <li>
-                                    <p>Scoring is limited to a single combination.</p>
-                                </li>
-                                <li>
-                                    <p>Without a valid combination, players doesn't score points.</p>
-                                </li>
-                                <li>
-                                    <p>Players cannot split the points they steal between opponents.</p>
-                                </li>
-                                <li>
-                                    <p>If a player is about to steal more points than the opponents have, he must instead score a basic combination.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="section">
+            <h2 id="scoring"><code>Scoring</code></h2>
+            <div class="sectionbody">
+                <p>To earn points, players must have one of the following four-cards combinations in their hand:</p>
+                <table class="score-table">
+                    <colgroup>
+                        <col style="width: 30%;">
+                        <col style="width: 20%;">
+                        <col style="width: 30%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Basic Combination</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Points</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Special Combination</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Pair<br>7<span class="card-symbol">♠</span>7<span class="card-symbol">♦</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">2</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Double&ensp;Pair<br>7<span class="card-symbol">♠</span>7<span class="card-symbol">♦</span>K<span class="card-symbol">♠</span>K<span class="card-symbol">♣</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Small&ensp;Run<br>9<span class="card-symbol">♥</span>10<span class="card-symbol">♦</span>J<span class="card-symbol">♣</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">3</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Small&ensp;Sequence<br>9<span class="card-symbol">♥</span>10<span class="card-symbol">♥</span>J<span class="card-symbol">♥</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Double&ensp;Run<br>9<span class="card-symbol">♥</span>10<span class="card-symbol">♦</span>J<span class="card-symbol">♣</span>J<span class="card-symbol">♥</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">4</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Double&ensp;Sequence<br>9<span class="card-symbol">♥</span>10<span class="card-symbol">♥</span>10<span class="card-symbol">♣</span>J<span class="card-symbol">♣</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Long&ensp;Run<br>3<span class="card-symbol">♠</span>4<span class="card-symbol">♠</span>5<span class="card-symbol">♦</span>6<span class="card-symbol">♣</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">5</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Long&ensp;Sequence<br>3<span class="card-symbol">♦</span>4<span class="card-symbol">♦</span>5<span class="card-symbol">♦</span>6<span class="card-symbol">♦</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Trio<br>Q<span class="card-symbol">♠</span>Q<span class="card-symbol">♣</span>Q<span class="card-symbol">♦</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">6</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Quad<br>Q<span class="card-symbol">♠</span>Q<span class="card-symbol">♣</span>Q<span class="card-symbol">♦</span>Q<span class="card-symbol">♥</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>If a player have a basic combination, he scores the points indicated above.<br>
+                    With a special combination, he <strong>steals</strong> the same number of points from any opponent.</p>
+                <p>The winner of the last trick gains a special privilege:
+                    he is the last to score and may replace <strong>one</strong> of his four cards with a card from an opponent's hand or with the trump card.</p>
             </div>
-            <div class="sect1">
-                <h2 id="_ending"><code>Ending</code></h2>
-                <div class="sectionbody">
-                    <div class="ulist">
-                        <ul>
-                            <li>
-                                <p>After scoring, discard all players' cards along with the trump card.</p>
-                            </li>
-                            <li>
-                                <p>Then a new round begins.</p>
-                            </li>
-                            <li>
-                                <p>Shuffle the deck only when there are no enough cards left to deal.</p>
-                            </li>
-                            <li>
-                                <p>Play continues until one player reaches <span class="chiffre">50</span> points and is declared <strong>Maître Voleur.</strong></p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <div class="paragraph">
-                        <p class="conclusion">Combinations Sheet</p>
-                    </div> -->
-                </div>
+            <div class="sectionbody">
+                <h3><code>Scoring Situations</code></h3>
+                <ul>
+                    <li>
+                        <p>In any combination, the Ace can be used either as a One or following the King.</p>
+                    </li>
+                    <li>
+                        <p>Scoring is limited to a single combination.</p>
+                    </li>
+                    <li>
+                        <p>Without a valid combination, players doesn't score points.</p>
+                    </li>
+                    <li>
+                        <p>Players cannot split the points they steal between opponents.</p>
+                    </li>
+                    <li>
+                        <p>If a player is about to steal more points than the opponents have, he must instead score a basic combination.</p>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <div class="section">
+            <h2 id="ending"><code>Ending</code></h2>
+            <div class="sectionbody">
+                <ul class="ending-list">
+                    <li>
+                        <p>After scoring, discard all players' cards along with the trump card.</p>
+                    </li>
+                    <li>
+                        <p>Then a new round begins.</p>
+                    </li>
+                    <li>
+                        <p>Shuffle the deck only when there are no enough cards left to deal.</p>
+                    </li>
+                    <li>
+                        <p>Play continues until one player reaches <span class="chiffre">50</span> points and is declared <strong>Maître Voleur.</strong></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-            <footer id="footer">
-                game designed by Adrien Cocuaud under CC BY-NC 4.0 Licence
-            </footer>
+    <footer id="footer">
+        game designed by Adrien Cocuaud under CC BY-NC 4.0 Licence
+    </footer>
 </body>
 
 </html>
