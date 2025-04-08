@@ -108,6 +108,7 @@ p {
 strong {
     font-style: normal;
     font-weight: normal;
+    /* font-family: "im fell great primer"; */
     color: var(--fg2);
 }
 
