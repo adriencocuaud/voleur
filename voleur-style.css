@@ -19,21 +19,29 @@ body {
     font-family: var(--font), serif;
     background-color: var(--bg);
     color: var(--fg2);
-    width: 85%;                /* Limite la largeur à 80% */
-    margin: 0 auto;            /* Centre le contenu */
-    padding: 20px; 
     line-height: 1.6;
 }
 
 #content {
+    width: 85%;                /* Limite la largeur à 80% */
+    margin: 0 auto;            /* Centre le contenu */
+    padding: 20px; 
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Header and title styles */
 #header {
-    /* text-align: center; */
-    padding: 20px 0;
+    width: 85%;                /* Limite la largeur à 80% */
+    margin: 0 auto; 
+    padding-top: 25px;
+}
+
+
+#footer {
+    width: 65%;                /* Limite la largeur à 80% */
+    margin: 0 auto; 
+    padding-top: 0px;
 }
 
 h1 {
