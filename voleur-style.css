@@ -31,7 +31,7 @@ body {
 /* Header and title styles */
 #header {
     width: 85%;                /* Limite la largeur à 80% */
-    margin: 0px auto -50px auto;
+    margin: 0px auto;
     padding-top: 25px;
 }
 
