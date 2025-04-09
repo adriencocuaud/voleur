@@ -1,6 +1,5 @@
 /* Import the custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+Great+Primer:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rye&family=Special+Elite&display=swap');
-
 /* Root variables for easy customization */
 :root {
     --bg: #8b743d;
@@ -31,7 +30,7 @@ body {
 /* Header and title styles */
 #header {
     width: 85%;                /* Limite la largeur à 80% */
-    margin: 0px auto;
+    margin: 0px auto -30px auto;
     padding-top: 25px;
 }
 
@@ -48,7 +47,7 @@ h1 {
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
-    margin: 0px;
+    margin: 0px auto -5px auto;
 }
 
 h1 code, h2 code, h3 code {
