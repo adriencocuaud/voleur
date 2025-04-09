@@ -1,7 +1,5 @@
 /* Import the custom fonts */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Special+Elite&family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+Great+Primer:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rye&family=Special+Elite&display=swap');
 
 /* Root variables for easy customization */
 :root {
@@ -33,7 +31,7 @@ body {
 /* Header and title styles */
 #header {
     width: 85%;                /* Limite la largeur à 80% */
-    margin: 0px auto -25px auto;
+    margin: 0px auto -50px auto;
     padding-top: 25px;
 }
 
@@ -50,7 +48,7 @@ h1 {
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
-    margin: 0px 0px -10px 0px;
+    margin: 0px;
 }
 
 h1 code, h2 code, h3 code {
@@ -89,7 +87,7 @@ p {
 }
 
 .intro {
-    font-family: "IM Fell Great Primer", serif !important;
+    font-family: "IM Fell Great Primer" !important;
     font-style: italic;
     margin-bottom: 30px;
 }
