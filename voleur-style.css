@@ -33,7 +33,7 @@ body {
 /* Header and title styles */
 #header {
     width: 85%;                /* Limite la largeur à 80% */
-    margin: 0 auto; 
+    margin: 0px auto -25px auto;
     padding-top: 25px;
 }
 
@@ -50,8 +50,7 @@ h1 {
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
-    margin: 0;
-    margin-bottom:-30px;
+    margin: 0px 0px -10px 0px;
 }
 
 h1 code, h2 code, h3 code {
@@ -87,7 +86,6 @@ p {
     color: black !important;
     font-family:"rye";
     font-size:1.3rem;
-    margin-bottom: 20px;
 }
 
 .intro {

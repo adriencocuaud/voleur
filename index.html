@@ -12,12 +12,12 @@
 <body>
     <div id="header">
         <h1><code>VOL<i>EUR</i>&nbsp;</code></h1>
+        <p class="game-subtitle">Playing Cards Game For 2 to 5 Players</p>
     </div>
 
     <div id="content">
         <div class="sectionbody">
             <p><span class="image right"><img src="fortune.webp" alt="cover" width="400"></span></p>
-            <p class="game-subtitle">Playing Cards Game For 2 to 5 Players</p>
             <p class="intro">After a long day of misdeeds, it's time to unwind with your familiar accomplices.
                 Brace yourself for a wild showdown of cards, only with a worthy hand will you steal victory.</p>
         </div>
@@ -34,7 +34,7 @@
             <div class="sectionbody">
                 <ul>
                     <li>
-                        <p>Prepare a <span class="chiffre">52-</span>cards deck, ranked from <span class="chiffre">2</span> to Ace and a way to keep score.</p>
+                        <p>Prepare a <span class="chiffre">52-</span>cards deck ranked from <span class="chiffre">2</span> to Ace, and a way to keep score.
                     </li>
                     <li>
                         <p>Shuffle the deck and deal six cards face-down to each player.</p>
@@ -65,15 +65,17 @@
                     Then players gather their four <strong>respective</strong> cards for scoring.
                 </p>
                 <h3><code>Exception</code></h3>
-                <p class="exception">In the first trick, if there is no winner, players start another trick simultaneously.</p>
+                <p class="exception">In the first trick, if there is no winner, players start another trick simultaneously.<br>
+                    Example: If the trump is heart and players play <span style="font-family: 'rye';">9<span class="card-symbol">♠</span>-9<span class="card-symbol">♦</span>-Q<span class="card-symbol">♠</span>-Q<span class="card-symbol">♣</span></span>, it is a draw because there is no single ranked card.</p>
             </div>
         </div>
 
         <div class="section">
             <h2 id="scoring"><code>Scoring</code></h2>
             <div class="sectionbody">
-                <p>The player to the left of the winner scores first, followed by the others in clockwise order.<br>
-                To earn points, players must have one of the following four-cards combinations in their hand:</p>
+                <p>To earn points, players must have one of the following four-cards combinations in hand.
+                    If they have a basic combination, they score the points indicated above.
+                    With a special combination, they <strong>steal</strong> the same number of points from any opponent.</p>
                 <table class="score-table">
                     <colgroup>
                         <col style="width: 30%;">
@@ -149,10 +151,9 @@
                         </tr>
                     </tbody>
                 </table>
-                <p>If a player have a basic combination, he scores the points indicated above.<br>
-                    With a special combination, he <strong>steals</strong> the same number of points from any opponent.</p>
-                <p>The winner of the last trick gains a scoring privilege:
-                    after each other player have scored, he may replace <strong>one</strong> of his four cards with a card from an opponent's hand or with the trump card.</p>
+                <p>Players score in clockwise order, starting with the player to the left of the winner.
+                    The winner scores last with a special privilege: before determining a combination, he may replace one of his four cards with either the trump card or any card from an opponent's hand.
+                </p>
             </div>
             <div class="sectionbody">
                 <h3><code>Scoring Situations</code></h3>
@@ -178,7 +179,11 @@
         <div class="section">
             <h2 id="ending"><code>Ending</code></h2>
             <div class="sectionbody">
-                <ul class="ending-list">
+                <p>After scoring, discard all players' cards along with the trump card, then a new round begins.
+                    Shuffle the deck only when there are no enough cards left to deal.</p>
+                <p>Play continues until one player reaches <span class="chiffre">50</span> points and is declared <strong>Maître Voleur.</strong></p>
+
+                <!-- <ul>
                     <li>
                         <p>After scoring, discard all players' cards along with the trump card.</p>
                     </li>
@@ -191,7 +196,7 @@
                     <li>
                         <p>Play continues until one player reaches <span class="chiffre">50</span> points and is declared <strong>Maître Voleur.</strong></p>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </div>
