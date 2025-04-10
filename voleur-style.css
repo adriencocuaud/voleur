@@ -101,10 +101,10 @@ p {
 }
 
 strong {
-    font-style: normal;
+    /* font-style: italic; */
     font-weight: normal;
     /* font-family: "im fell great primer"; */
-    color: var(--fg2);
+    color: white;
 }
 
 /* Image styles */
