@@ -138,8 +138,8 @@ ul {
     border-collapse: collapse;
     background-color: #e9d2aa; /* Couleur de base beige */
     background-image: 
-        radial-gradient(#dac28e 15%, transparent 16%);
-    background-size: 7px 7px;
+        radial-gradient(#dac28e 10%, transparent 16%);
+    background-size: 5px 5px;
     background-position: 0 0, 3px 3px;
     opacity: 0.9;
 }
