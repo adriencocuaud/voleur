@@ -1,5 +1,6 @@
 /* Import the custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+Great+Primer:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rye&family=Special+Elite&display=swap');
+
 /* Root variables for easy customization */
 :root {
     --bg: #8b743d;
@@ -9,36 +10,77 @@
     --red: #9A4129;
     --font: "IM Fell English";
     --font-size: 1.5rem;
+    --shadow: rgba(0, 0, 0, 0.25);
+    --card-bg: #e9d2aa;
+    --accent: #b85e40;
+    --header-accent: #c49e51;
 }
 
-/* Base styles */
 body {
     font-family: var(--font), serif;
     background-color: var(--bg);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234f401c' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     color: var(--fg2);
     line-height: 1.6;
 }
 
 #content {
-    width: 85%;                /* Limite la largeur à 80% */
-    margin: 0 auto;            /* Centre le contenu */
-    padding: 20px; 
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Header and title styles */
 #header {
-    width: 85%;                /* Limite la largeur à 80% */
+    position: relative;
+    width: 85%;
     margin: 0px auto -30px auto;
     padding-top: 25px;
 }
 
-
 #footer {
-    width: 65%;                /* Limite la largeur à 80% */
-    margin: 0 auto; 
-    padding-top: 0px;
+    width: 50%;
+    font-family: "Lato", sans-serif !important;
+    color: black !important;
+    text-align: center;
+    padding: 20px 0;
+    margin: 15px auto;
+    /* border-top: 1px solid black; */
+    background-color: var(--bg);
+    border-radius: 0 0 5px 5px;
+    font-size: 0.9rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le sélecteur de langue avec liens */
+#language-selector {
+    position: absolute;
+    top: 20px;
+    right: -5%;
+    z-index: 100;
+    font-family: "Lato", sans-serif;
+    background-color: var(--bg2);
+    border: 1px solid var(--fg);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.lang-link {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.lang-link:hover {
+    color: var(--red);
+}
+
+.lang-link.active {
+    color: white;
+    text-decoration: underline;
 }
 
 h1 {
@@ -50,12 +92,15 @@ h1 {
     margin: 0px auto -10px auto;
 }
 
-h1 code, h2 code, h3 code {
+h1 code,
+h2 code,
+h3 code {
     font-family: var(--font);
     font-weight: 400;
     background-color: var(--bg2);
     padding: 2px 7px;
     border-radius: 5px;
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.2);;
 }
 
 h2 {
@@ -81,8 +126,8 @@ p {
 
 .game-subtitle {
     color: black !important;
-    font-family:"rye";
-    font-size:1.3rem;
+    font-family: "rye";
+    font-size: 1.3rem;
 }
 
 .intro {
@@ -114,7 +159,6 @@ img {
 
 .image.right {
     float: right;
-    margin-bottom: 20px;
 }
 
 /* Lists */
@@ -132,27 +176,40 @@ ul {
 /* Table styles */
 .score-table {
     width: 50%;
-    float: right; 
+    float: right;
     margin: 0px 0px 20px 15px;
-    border: 3.5px solid black;
     border-collapse: collapse;
-    background-color: #e9d2aa; /* Couleur de base beige */
-    background-image: 
+    background-color: #e9d2aa;
+    background-image:
         radial-gradient(#dac28e 10%, transparent 16%);
     background-size: 5px 5px;
     background-position: 0 0, 3px 3px;
     opacity: 0.9;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 
-.score-table td, .score-table th {
+.score-table td,
+.score-table th {
     text-align: center;
     vertical-align: middle;
+    padding: 3px;
 }
 
 .score-table tr {
     border-bottom: 1px solid black;
-} 
+    transition: background-color 0.2s ease;
+}
+
+.score-table tr:last-child {
+    border-bottom: none;
+}
+
+.score-table tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
 
 .tableblock {
     margin: 12px 2px !important;
@@ -170,7 +227,6 @@ ul {
     font-size: 1.25em;
 }
 
-/* Section styling */
 .section {
     margin-bottom: 30px;
     border-top: 1px solid var(--fg2);
@@ -180,18 +236,6 @@ ul {
     margin-bottom: 20px;
 }
 
-/* Footer */
-#footer {
-    background-color: var(--bg);
-    font-family: "Lato", sans-serif !important;
-    color: black !important;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    border-top: 1px solid black;
-}
-
-/* Code blocks */
 code {
     color: var(--fg2);
     background-color: var(--bg2);
@@ -205,24 +249,30 @@ code {
     :root {
         --font-size: 1.3rem;
     }
-    
+
     .image.right {
         float: none;
         display: block;
         margin: 0 auto 20px;
         text-align: center;
     }
-    
+
     .image.right img {
         max-width: 100%;
         height: auto;
     }
-    
+
     .title {
         font-size: 40px;
     }
-    
+
     h2 {
         font-size: 30px;
+    }
+
+    #language-selector {
+        position: static;
+        text-align: right;
+        margin-bottom: 15px;
     }
 }

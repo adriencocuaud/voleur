@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="voleur-style.css">
+    <title>VOLEUR</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="language-selector">
+            <a href="index.html" class="lang-link">EN</a> |
+            <a href="voleur-french.html" class="lang-link active">FR</a>
+        </div>
+        <h1><code>VOL<i>EUR</i>&nbsp;</code></h1>
+        <p class="game-subtitle">Jeu de Cartes Pour 2 à 5 Joueurs</p>
+    </div>
+
+    <div id="content">
+        <div class="sectionbody">
+            <p><span class="image right"><img src="fortune.webp" alt="cover" width="400"></span></p>
+            <p class="intro">Après une longue journée de méfaits, vous voilà de nouveau nez à nez avec vos complices pour une partie de carte endiablée.
+             Saurez vous dompter la fièvre du jeu pour voler la victoire ?</p>
+        </div>
+        <div class="section">
+            <div class="sectionbody">
+                <h2 id="objective"><code>Objectifs</code></h2>
+                <p>Marquer autant de points que possible sur plusieurs manches de plis. </p>
+                <p>Chaque manche, les joueurs s'affrontent avec une main de quatre cartes, visant à remporter le <strong>dernier pli.</strong></p>
+                <p>Les points sont gagnés en fonction des combinaisons de type poker dans la main du joueur.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 id="setup"><code>Mise en Place</code></h2>
+            <div class="sectionbody">
+                <ul>
+                    <li>
+                        <p>Préparez un jeu de <span class="chiffre">52</span> cartes, classées du <span class="chiffre">2</span> à l'As, et un moyen de tenir le score.
+                    </li>
+                    <li>
+                        <p>Mélangez le jeu et distribuez six cartes face cachée à chaque joueur.</p>
+                    </li>
+                    <li>
+                        <p>Les joueurs regardent leur main, puis défaussent <strong>deux</strong> de leurs cartes.</p>
+                    </li>
+                    <li>
+                        <p>Ensuite, révélez la carte du dessus du paquet pour déterminer l'atout de la manche.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2 id="round"><code>Déroulement</code></h2>
+            <div class="sectionbody">
+                <p>Une manche consiste en quatre plis. Pour le premier pli, les joueurs jouent une carte <strong>simultanément.</strong>
+                    Le joueur avec la carte d'atout la plus élevée remporte le pli.
+                    Si aucune carte d'atout n'est jouée, la carte <strong>unique</strong> de rang le plus élevé remporte le pli, quelle que soit sa couleur.
+                </p>
+
+                <p>Le gagnant d'un pli entame le suivant, les adversaires doivent suivre la couleur.
+                    S'ils ne peuvent pas, ils doivent jouer une carte d'atout ; sinon, ils peuvent jouer n'importe quelle carte.
+                    Si aucune carte d'atout n'est jouée, la carte la plus haute dans la <strong>couleur d'entame</strong> remporte le pli.</p>
+
+                <p>Les plis ne sont pas collectés, les joueurs gardent leurs cartes jouées face visible devant eux.
+                    Le jeu continue jusqu'à ce que le quatrième pli soit remporté, accordant un <strong>privilège de score.</strong>
+                    Ensuite, les joueurs rassemblent leurs quatre cartes <strong>respectives</strong> pour le décompte.
+                </p>
+                <h3><code>Exception</code></h3>
+                <p class="exception">Lors du premier pli, s'il n'y a pas de gagnant, les joueurs commencent un autre pli simultanément.
+                    Par exemple, si le cœur est atout et que les joueurs jouent simultanément <span style="font-family: 'rye';">9<span class="card-symbol">♠</span>-9<span class="card-symbol">♦</span>-Q<span class="card-symbol">♠</span>-Q<span class="card-symbol">♣</span></span>, c'est une égalité.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="scoring"><code>Score</code></h2>
+            <div class="sectionbody">
+                <table class="score-table">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 10%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Combinaison Basique</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Points</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Combinaison Spéciale</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Paire<br>7<span class="card-symbol">♠</span>7<span class="card-symbol">♦</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">2</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Deux Paires<br>7<span class="card-symbol">♠</span>7<span class="card-symbol">♦</span>K<span class="card-symbol">♠</span>K<span class="card-symbol">♣</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Petite Suite<br>9<span class="card-symbol">♥</span>10<span class="card-symbol">♦</span>J<span class="card-symbol">♣</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">3</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Petite Sequence<br>9<span class="card-symbol">♥</span>10<span class="card-symbol">♥</span>J<span class="card-symbol">♥</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Double Suite<br>9<span class="card-symbol">♥</span>10<span class="card-symbol">♦</span>J<span class="card-symbol">♣</span>J<span class="card-symbol">♥</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">4</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Double Sequence<br>9<span class="card-symbol">♥</span>10<span class="card-symbol">♥</span>10<span class="card-symbol">♣</span>J<span class="card-symbol">♣</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Grande Suite<br>3<span class="card-symbol">♠</span>4<span class="card-symbol">♠</span>5<span class="card-symbol">♦</span>6<span class="card-symbol">♣</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">5</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Grande Sequence<br>3<span class="card-symbol">♦</span>4<span class="card-symbol">♦</span>5<span class="card-symbol">♦</span>6<span class="card-symbol">♦</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="tableblock">Brelan<br>Q<span class="card-symbol">♠</span>Q<span class="card-symbol">♣</span>Q<span class="card-symbol">♦</span></p>
+                            </td>
+                            <td class="halign-center valign-center">
+                                <p class="tableblock points">6</p>
+                            </td>
+                            <td>
+                                <p class="tableblock">Carré<br>Q<span class="card-symbol">♠</span>Q<span class="card-symbol">♣</span>Q<span class="card-symbol">♦</span>Q<span class="card-symbol">♥</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Pour gagner des points, les joueurs doivent avoir l'une des combinaisons de quatre cartes suivantes en main.
+                    S'ils ont une combinaison de base, ils marquent les points indiqués.
+                    Avec une combinaison spéciale, ils <strong>volent</strong> le même nombre de points à n'importe quel adversaire.</p>
+                <p>Les joueurs marquent dans le sens horaire, en commençant par le joueur à gauche du gagnant.
+                    Le gagnant marque en dernier avec un privilège : avant de déterminer une combinaison, il peut remplacer <strong>une</strong> de ses quatre cartes soit par la carte d'atout, soit par n'importe quelle carte de la main d'un adversaire.
+                </p>
+            </div>
+            <div class="sectionbody">
+                <h3><code>Situations de Score</code></h3>
+                <ul>
+                    <li>
+                        <p>Dans n'importe quelle combinaison, l'As peut être utilisé soit comme un Un, soit après le Roi.</p>
+                    </li>
+                    <li>
+                        <p>Le score est limité à une seule combinaison.</p>
+                    </li>
+                    <li>
+                        <p>Sans combinaison valide, les joueurs ne marquent pas de points.</p>
+                    </li>
+                    <li>
+                        <p>Les joueurs ne peuvent pas répartir les points qu'ils volent entre les adversaires.</p>
+                    </li>
+                    <li>
+                        <p>Si un joueur est sur le point de voler plus de points que les adversaires n'en ont, il doit à la place marquer une combinaison de base.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2 id="victory"><code>Victoire</code></h2>
+            <div class="sectionbody">
+                <p>À la fin de la manche, toutes les cartes des joueurs — y compris l'atout — sont défaussées. 
+                    Chaque joueur reçoit ensuite une nouvelle main de six cartes pour commencer la manche suivante. 
+                    Le jeu n'est remélangé que lorsqu'il n'y a plus assez de cartes pour distribuer.</p>
+                <p>Les joueurs continuent de disputer des manches jusqu'à ce que l'un d'eux atteigne <strong><span class="chiffre">50</span> points.</strong>
+                    Le joueur avec le score le plus élevé à la fin de cette manche est couronné <strong>Vainqueur</strong> de Cartes et Fortune.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        jeu conçu par Adrien Cocuaud sous licence CC BY-NC 4.0
+    </footer>
+</body>
+
+</html>
