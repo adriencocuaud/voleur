@@ -1,5 +1,6 @@
 /* Import the custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+Great+Primer:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rye&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap');
 
 /* Root variables for easy customization */
 :root {
@@ -19,7 +20,8 @@
 body {
     font-family: var(--font), serif;
     background-color: var(--bg);
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234f401c' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234f401c' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+    background-image: url("data:image/svg+xml,%3Csvg width='125' height='125' viewBox='0 0 125 125' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234f401c' fill-opacity='0.1'%3E%3Ctext x='5' y='20' font-size='20'%3E%E2%99%A5%3C/text%3E%3Ctext x='35' y='20' font-size='20'%3E%E2%99%A6%3C/text%3E%3Ctext x='65' y='20' font-size='20'%3E%E2%99%A0%3C/text%3E%3Ctext x='95' y='20' font-size='20'%3E%E2%99%A3%3C/text%3E%3Ctext x='5' y='50' font-size='20'%3E%E2%99%A6%3C/text%3E%3Ctext x='35' y='50' font-size='20'%3E%E2%99%A0%3C/text%3E%3Ctext x='65' y='50' font-size='20'%3E%E2%99%A3%3C/text%3E%3Ctext x='95' y='50' font-size='20'%3E%E2%99%A5%3C/text%3E%3Ctext x='5' y='80' font-size='20'%3E%E2%99%A0%3C/text%3E%3Ctext x='35' y='80' font-size='20'%3E%E2%99%A3%3C/text%3E%3Ctext x='65' y='80' font-size='20'%3E%E2%99%A5%3C/text%3E%3Ctext x='95' y='80' font-size='20'%3E%E2%99%A6%3C/text%3E%3Ctext x='5' y='110' font-size='20'%3E%E2%99%A3%3C/text%3E%3Ctext x='35' y='110' font-size='20'%3E%E2%99%A5%3C/text%3E%3Ctext x='65' y='110' font-size='20'%3E%E2%99%A6%3C/text%3E%3Ctext x='95' y='110' font-size='20'%3E%E2%99%A0%3C/text%3E%3C/g%3E%3C/svg%3E");
     color: var(--fg2);
     line-height: 1.6;
 }
@@ -134,6 +136,10 @@ p {
     font-family: "IM Fell Great Primer" !important;
     font-style: italic;
     margin-bottom: 30px;
+}
+
+.intro.french {
+    font-family: "IM Fell french canon" !important;
 }
 
 .conclusion {
