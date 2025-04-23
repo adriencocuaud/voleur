@@ -154,7 +154,7 @@ p {
 strong {
     /* font-style: italic; */
     font-weight: normal;
-    /* font-family: "im fell great primer"; */
+    /* font-family: "im fell french canon"; */
     color: white;
 }
 
@@ -229,9 +229,14 @@ ul {
     font-size: 2.5em !important;
 }
 
-.card-symbol {
-    font-size: 1.25em;
+.symbol {
+    font-size: 1.2em;
 }
+
+.symbol.red{
+    color: var(--red);
+}
+
 
 .section {
     margin-bottom: 30px;
