@@ -314,7 +314,7 @@ code {
     
     /* Pour être certain d'appliquer aux tableblocks aussi */
     html body #content .score-table .symbol {
-        font-size: 1.2em !important;
+        font-size: 1em !important;
     }
     
     html body #content .score-table .points {
