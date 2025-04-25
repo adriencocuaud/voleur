@@ -220,7 +220,6 @@ ul {
 .tableblock {
     margin: 12px 2px !important;
     font-family: "Rye", cursive !important;
-    font-size: var(--font-size) !important;
     color: black !important;
     font-size: 1rem !important;
 }
@@ -289,8 +288,7 @@ code {
     }
 
     h1 {
-        font-size: 45px;
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
     .game-subtitle {
@@ -302,12 +300,25 @@ code {
     }
 
     .score-table {
-        float: none;
-        width: 100%;
-        height: auto;
-        display: block;
-        margin:  20px auto;
-        text-align: center;
+        width: 100% !important;
+        float: none !important; 
+        margin: 20px 0 !important; 
+    }
+    
+    /* Réduire la taille des symboles et chiffres dans le tableau */
+    .score-table .tableblock {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        word-spacing: normal !important;
+    }
+    
+    /* Pour être certain d'appliquer aux tableblocks aussi */
+    html body #content .score-table .symbol {
+        font-size: 1.2em !important;
+    }
+    
+    html body #content .score-table .points {
+        font-size: 1.8em !important;
     }
     
     #language-selector {
