@@ -321,5 +321,14 @@ ul {
         #header {
             text-align: left;
         }
+
+        .image.right {
+            float: right;
+        }
+
+        .image.right img {
+            width: 250;
+            height: auto;
+        }
     }
 }
