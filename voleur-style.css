@@ -63,13 +63,13 @@ body {
     z-index: 100;
     font-family: "Lato", sans-serif;
     background-color: var(--bg2);
-    border: 1px solid var(--fg);
+    border: 1px solid var(--fg2);
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 .lang-link {
-    color: var(--fg);
+    color: var(--fg2);
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
@@ -86,36 +86,30 @@ body {
 }
 
 h1 {
-    color: var(--fg);
-    font-family: var(--font), serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
+    font-size: 60px;
     margin: 0px auto -10px auto;
-}
-
-h1 code,
-h2 code,
-h3 code {
-    font-family: var(--font);
-    font-weight: 400;
-    background-color: var(--bg2);
-    padding: 2px 7px;
-    border-radius: 5px;
-    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.2);;
 }
 
 h2 {
     font-size: 36px;
     margin-top: 30px;
     margin-bottom: -0px;
-    font-weight: normal;
 }
 
 h3 {
-    font-weight: normal;
     font-size: 25px;
     margin-bottom: -0px;
+}
+
+code {
+    color: var(--fg2) !important;
+    font-family: var(--font);
+    font-weight: 400;
+    word-spacing: 0.25rem;
+    background-color: var(--bg2);
+    padding: 2px 7px;
+    border-radius: 5px;
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Text styles */
@@ -246,13 +240,6 @@ ul {
     margin-bottom: 20px;
 }
 
-code {
-    color: var(--fg2);
-    background-color: var(--bg2);
-    font-family: var(--font);
-    word-spacing: 0.25rem;
-    padding: 3px 6px;
-}
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
