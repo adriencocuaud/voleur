@@ -185,7 +185,7 @@ ul {
     background-size: 5px 5px;
     background-position: 0 0, 3px 3px;
     opacity: 0.9;
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -226,7 +226,7 @@ ul {
     font-size: 1.2em;
 }
 
-.symbol.red{
+.symbol.red {
     color: var(--red);
 }
 
@@ -246,9 +246,9 @@ ul {
     :root {
         --font-size: 1.3rem;
     }
-    
-    #content{
-        width: 90%;        
+
+    #content {
+        width: 90%;
     }
 
     #header {
@@ -275,6 +275,7 @@ ul {
     }
 
     h1 {
+        font-size: 50px;
         margin-top: 25px;
     }
 
@@ -288,31 +289,37 @@ ul {
 
     .score-table {
         width: 100% !important;
-        float: none !important; 
-        margin: 20px 0 !important; 
+        float: none !important;
+        margin: 20px 0 !important;
     }
-    
+
     /* Réduire la taille des symboles et chiffres dans le tableau */
     .score-table .tableblock {
         font-size: 0.9rem !important;
         line-height: 1.4 !important;
         word-spacing: normal !important;
     }
-    
+
     /* Pour être certain d'appliquer aux tableblocks aussi */
     html body #content .score-table .symbol {
         font-size: 1em !important;
     }
-    
+
     html body #content .score-table .points {
         font-size: 1.8em !important;
     }
-    
+
     #language-selector {
         position: absolute;
         top: 10px;
         right: 0;
         padding: 1px 2px;
         border-radius: 4px;
+    }
+
+    @media (orientation: landscape) {
+        #header {
+            text-align: left;
+        }
     }
 }
