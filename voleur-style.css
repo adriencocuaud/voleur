@@ -296,7 +296,7 @@ ul {
     /* Réduire la taille des symboles et chiffres dans le tableau */
     .score-table .tableblock {
         font-size: 0.9rem !important;
-        line-height: 1.4 !important;
+        /* line-height: 1.4 !important; */
         word-spacing: normal !important;
     }
 
@@ -322,13 +322,25 @@ ul {
             text-align: left;
         }
 
+        h1 {
+            margin-top: 0px;
+        }
+
         .image.right {
             float: right;
         }
 
         .image.right img {
-            width: 250;
+            width: 180;
             height: auto;
+        }
+
+        .score-table {
+            width: 90% !important;
+        }
+
+        .score-table .tableblock {
+            font-size: 1rem !important;
         }
     }
 }
