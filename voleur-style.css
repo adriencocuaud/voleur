@@ -155,6 +155,7 @@ strong {
 /* Image styles */
 img {
     background-color: var(--bg);
+    width: 400px;
 }
 
 .image.right {
@@ -338,7 +339,7 @@ ul {
         }
 
         .image.right img {
-            width: 100;
+            width: 250px !important;
             height: auto;
         }
 
