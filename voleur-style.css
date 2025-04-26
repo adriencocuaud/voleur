@@ -212,7 +212,7 @@ ul {
 }
 
 .tableblock {
-    margin: 12px 2px !important;
+    margin: 10px 2px !important;
     font-family: "Rye", cursive !important;
     color: black !important;
     font-size: 1rem !important;
@@ -245,6 +245,10 @@ ul {
 @media (max-width: 768px) {
     :root {
         --font-size: 1.3rem;
+    }
+
+    body {
+        line-height: 1.4;
     }
 
     #content {
@@ -290,13 +294,12 @@ ul {
     .score-table {
         width: 100% !important;
         float: none !important;
-        margin: 20px 0 !important;
+        margin: 20px auto !important;
     }
 
     /* Réduire la taille des symboles et chiffres dans le tableau */
     .score-table .tableblock {
         font-size: 0.9rem !important;
-        /* line-height: 1.4 !important; */
         word-spacing: normal !important;
     }
 
@@ -318,6 +321,10 @@ ul {
     }
 
     @media (orientation: landscape) {
+        body {
+            line-height: 1.5;
+        }
+
         #header {
             text-align: left;
         }
@@ -331,7 +338,7 @@ ul {
         }
 
         .image.right img {
-            width: 180;
+            width: 100;
             height: auto;
         }
 
