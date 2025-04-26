@@ -42,7 +42,7 @@ body {
 }
 
 #footer {
-    width: 50%;
+    width: 80%;
     font-family: "Lato", sans-serif !important;
     color: black !important;
     text-align: center;
@@ -156,6 +156,7 @@ strong {
 img {
     background-color: var(--bg);
     width: 400px;
+    height: auto;
 }
 
 .image.right {
@@ -253,18 +254,14 @@ ul {
     }
 
     #content {
-        width: 90%;
+        width: 95%;
     }
 
     #header {
-        width: 90%;
+        width: 95%;
         text-align: center;
         position: relative;
         padding-top: 30px;
-    }
-
-    #footer {
-        width: 90%;
     }
 
     .image.right {
@@ -326,8 +323,13 @@ ul {
             line-height: 1.5;
         }
 
+        #content{
+            width: 90%;
+        }
+
         #header {
             text-align: left;
+            width: 90%;
         }
 
         h1 {
