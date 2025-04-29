@@ -62,11 +62,10 @@
 
                 <p>The winner of a trick leads the next one, opponents must follow suit.
                     If they cannot, they must play a trump card; otherwise, they can play any card.
-                    If no trump card is played, the highest card in the <strong>lead suit</strong> wins the trick.</p>
+                    If no trump card is played, the highest card in the lead suit wins the trick.</p>
 
                 <p>Tricks are not collected, players keep their played cards face-up in front of them.
-                    Play continues until the fourth trick is won, granting a <strong>scoring privilege.</strong>
-                    Then players gather their four <strong>respective</strong> cards for scoring.
+                    Upon winning the fourth trick, which grants a scoring <strong>privilege</strong>, each player collects his four cards for scoring.
                 </p>
                 <h3><code>Exception</code></h3>
                 <p class="exception">If there is no winner in the first trick, players start another trick simultaneously.<br>
@@ -104,7 +103,6 @@
                                 <p class="tableblock points">2</p>
                             </td>
                             <td>
-                                <!-- Rogue Duo -->
                                 <p class="tableblock">Twin Thief<br>2<span class="symbol">♣</span>2<span class="symbol red">♦</span> J<span class="symbol">♣</span>J<span class="symbol red">♥</span></p>
                             </td>
                         </tr>
@@ -138,7 +136,7 @@
                                 <p class="tableblock points">5</p>
                             </td>
                             <td>
-                                <p class="tableblock">Shadower<br>3<span class="symbol red">♦</span>4<span class="symbol red">♦</span>5<span class="symbol red">♦</span>6<span class="symbol red">♦</span></p>
+                                <p class="tableblock">Shadower<br>4<span class="symbol red">♦</span>4<span class="symbol red">♦</span>5<span class="symbol red">♦</span>6<span class="symbol red">♦</span></p>
                             </td>
                         </tr>
                         <tr>
@@ -149,7 +147,7 @@
                                 <p class="tableblock points">6</p>
                             </td>
                             <td>
-                                <p class="tableblock">Quadumbra<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span>Q<span class="symbol red">♥</span></p>
+                                <p class="tableblock">Quadricide<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span>Q<span class="symbol red">♥</span></p>
                             </td>
                         </tr>
                     </tbody>
@@ -158,7 +156,7 @@
                     If they have a basic combination, they score the points indicated.
                     With a sneaky combination, they <strong>steal</strong> the same number of points from any opponent.</p>
                 <p>Players score in clockwise order, starting with the player to the left of the winner.
-                    The winner scores last with a privilege: before determining a combination, he may replace <strong>one</strong> of his four cards with either the trump card or any card from an opponent's hand.
+                    As a privilege, before determining a combination, the winner may replace <strong>one</strong> of his four cards with a card from an opponent's hand, the discard pile, or trump.
                 </p>
             </div>
             <div class="sectionbody">
@@ -174,6 +172,9 @@
                         <p>Without a valid combination, players doesn't score points.</p>
                     </li>
                     <li>
+                        <p>The winner scores last and his privilege only affect his hand.</p>
+                    </li>
+                    <li>
                         <p>Players cannot split the points they steal between opponents.</p>
                     </li>
                     <li>
@@ -186,8 +187,8 @@
             <h2 id="victory"><code>Victory</code></h2>
             <div class="sectionbody">
                 <p>After scoring, all players' cards — including the trump — are discarded. 
-                    Each player then receives a fresh hand of six cards to begin the next round. 
-                    The deck is reshuffled only when there are not enough cards left to deal.</p>
+                    The deck is shuffled, then each player receives a fresh hand of six cards to begin the next round. 
+                </p>
                 <p>Players continue to dispute rounds until one of them reaches <strong><span class="chiffre">50</span> points.</strong>
                     The player with the highest score at the end of that round is crowned <strong>Winner</strong> of Cards and Fortune.</p>
             </div>

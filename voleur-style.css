@@ -179,7 +179,7 @@ ul {
 .score-table {
     width: 50%;
     float: right;
-    margin: 0px 0px 20px 15px;
+    margin: 10px 0px 20px 15px;
     border-collapse: collapse;
     background-color: #e9d2aa;
     background-image:
@@ -254,11 +254,11 @@ ul {
     }
 
     #content {
-        width: 95%;
+        width: 90%;
     }
 
     #header {
-        width: 95%;
+        width: 90%;
         text-align: center;
         position: relative;
         padding-top: 30px;
@@ -323,13 +323,8 @@ ul {
             line-height: 1.5;
         }
 
-        #content{
-            width: 90%;
-        }
-
         #header {
             text-align: left;
-            width: 90%;
         }
 
         h1 {
@@ -341,7 +336,7 @@ ul {
         }
 
         .image.right img {
-            width: 250px !important;
+            width: 300px !important;
             height: auto;
         }
 
