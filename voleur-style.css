@@ -160,13 +160,6 @@ p {
     font-family: "Special Elite", cursive;
 }
 
-strong {
-    /* font-style: italic; */
-    font-weight: normal;
-    /* font-family: "im fell french canon"; */
-    color: white;
-}
-
 /* Image styles */
 img {
     background-color: var(--bg);
