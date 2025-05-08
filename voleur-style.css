@@ -93,7 +93,7 @@ h1 {
 h2 {
     font-size: 36px;
     margin-top: 30px;
-    margin-bottom: -0px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -297,12 +297,16 @@ ul {
         margin-top: 25px;
     }
 
+    h2 {
+        font-size: 30px;
+    }
+
     .game-subtitle {
         font-size: 1.15rem;
     }
 
-    h2 {
-        font-size: 30px;
+    .clarifications p {
+        font-size: 1.15rem !important;
     }
 
     .score-table {
