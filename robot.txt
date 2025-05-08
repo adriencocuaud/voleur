@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://adriencocuaud.github.io/voleur/index.html
