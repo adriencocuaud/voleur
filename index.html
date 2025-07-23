@@ -70,8 +70,8 @@
                     Upon winning the fourth trick, which grants a scoring privilege, each player collects his four cards for scoring.
                 </p>
                 <h3><code>Exception</code></h3>
-                <p class="exception">If there is no winner in the first trick, players start another trick simultaneously.<br>
-                    For example, if heart is trump and players simultaneously play
+                <p class="exception">If there is no winner in the first trick, players start another trick simultaneously:<br>
+                    for example, if heart is trump and players simultaneously play
                     <span style="font-family: 'rye'; color:black">9<span class="symbol">♠</span>-9<span class="symbol red">♦</span>-Q<span class="symbol">♠</span>-Q<span class="symbol">♣</span></span>
                 </p>
             </div>
@@ -82,85 +82,71 @@
             <div class="sectionbody">
                 <table class="score-table">
                     <colgroup>
-                        <col style="width: 20%;">
-                        <col style="width: 10%;">
-                        <col style="width: 20%;">
+                        <col style="width: 25%;">
+                        <col style="width: 5%;">
+                        <col style="width: 25%;">
                     </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Simple</th>
+                            <th>Points</th>
+                            <th>Double</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <p class="tableblock">Basic Combo</p>
+                                Pair<br>7<span class="symbol">♠</span>7<span class="symbol red">♦</span>
                             </td>
+                            <td class="points">2</td>
                             <td>
-                                <p class="tableblock">Points</p>
-                            </td>
-                            <td>
-                                <p class="tableblock">Sneaky Combo</p>
+                                Two Pairs<br>2<span class="symbol">♣</span>2<span class="symbol red">♦</span> J<span class="symbol">♣</span>J<span class="symbol red">♥</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p class="tableblock">Pair<br>7<span class="symbol">♠</span>7<span class="symbol red">♦</span></p>
+                                Run<br>9<span class="symbol red">♥</span>10<span class="symbol red">♦</span>J<span class="symbol">♣</span>
                             </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">2</p>
-                            </td>
+                            <td class="points">3</td>
                             <td>
-                                <p class="tableblock">Twin Thief<br>2<span class="symbol">♣</span>2<span class="symbol red">♦</span> J<span class="symbol">♣</span>J<span class="symbol red">♥</span></p>
+                                Run Flush<br>9<span class="symbol red">♥</span>10<span class="symbol red">♥</span>J<span class="symbol red">♥</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p class="tableblock">Run<br>9<span class="symbol red">♥</span>10<span class="symbol red">♦</span>J<span class="symbol">♣</span></p>
+                                Pair Run<br>5<span class="symbol">♠</span>6<span class="symbol">♣</span>7<span class="symbol">♠</span>7<span class="symbol red">♦</span>
                             </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">3</p>
-                            </td>
+                            <td class="points">4</td>
                             <td>
-                                <p class="tableblock">Rogue<br>9<span class="symbol red">♥</span>10<span class="symbol red">♥</span>J<span class="symbol red">♥</span></p>
+                                Pair flush<br>2<span class="symbol red">♥</span>2<span class="symbol red">♦</span> J<span class="symbol">♠</span>J<span class="symbol">♣</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p class="tableblock">Double Run<br>5<span class="symbol">♠</span>6<span class="symbol">♣</span>7<span class="symbol">♠</span>7<span class="symbol red">♦</span></p>
+                                Sequence<br>3<span class="symbol">♠</span>4<span class="symbol">♠</span>5<span class="symbol red">♦</span>6<span class="symbol">♣</span>
                             </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">4</p>
-                            </td>
+                            <td class="points">5</td>
                             <td>
-                                <p class="tableblock">Double Agent<br>2<span class="symbol red">♥</span>2<span class="symbol red">♦</span></span> J<span class="symbol">♠</span>J<span class="symbol">♣</span></p>
+                                Sequence Flush<br>3<span class="symbol red">♦</span>4<span class="symbol red">♦</span>5<span class="symbol red">♦</span>6<span class="symbol red">♦</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p class="tableblock">Sequence<br>3<span class="symbol">♠</span>4<span class="symbol">♠</span>5<span class="symbol red">♦</span>6<span class="symbol">♣</span></p>
+                                Triple<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span>
                             </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">5</p>
-                            </td>
+                            <td class="points">6</td>
                             <td>
-                                <p class="tableblock">Shadower<br>3<span class="symbol red">♦</span>4<span class="symbol red">♦</span>5<span class="symbol red">♦</span>6<span class="symbol red">♦</span></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="tableblock">Triple<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span></p>
-                            </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">6</p>
-                            </td>
-                            <td>
-                                <p class="tableblock">Quadricide<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span>Q<span class="symbol red">♥</span></p>
+                                Quadra<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span>Q<span class="symbol red">♥</span>
                             </td>
                         </tr>
                     </tbody>
+                    <!-- Twin Thief, Rogue, Double Agent, Shadower, Quadricide -->
                 </table>
-                <p>To earn points, players must have one of the following four-cards combinations in hand.
-                    If they have a basic combination, they score the points indicated.
-                    With a sneaky combination, they steal the same number of points from any opponent.</p>
-                <p>Players score in clockwise order, starting with the player to the left of the winner.</p>
-                <p>As a privilege, to determine his combination, the winner can use one card from an opponent's hand, the discard pile, or trump.</p>
-
+                <p>Players earn points with one of these combinations in hand. Double combinations are worth twice the amount.</p>
+                <p>Players score in clockwise order, starting with the player to the left of the winner.<br>
+                    As a privilege, the winner can choose between :</p>
+                <p><span class="chiffre">1. </span>Steal the points his combination is worth from one opponent.</p>
+                <p><span class="chiffre">2. </span>Take one card from any opponent's hand or the discard pile to score a better combination.</p>
             </div>
             <div class="sectionbody">
                 <h3><code>Clarifications</code></h3>
@@ -169,13 +155,13 @@
                         <p>Scoring is limited to a single combination.</p>
                     </li>
                     <li>
-                        <p>The Ace can be used as a One or follow the King, depending on the combination.</p>
+                        <p>Aces can be used as a One or follow the King, depending on the combination.</p>
                     </li>
                     <li>
-                        <p>Players cannot split the points they steal between opponents.</p>
+                        <p>Players score cannot go below zero.</p>
                     </li>
                     <li>
-                        <p>Players cannot steal more points than their opponents have.</p>
+                        <p>The winner cannot split the points he steals between opponents.</p>
                     </li>
                 </ul>
             </div>

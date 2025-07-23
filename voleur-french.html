@@ -72,8 +72,8 @@
                     Une fois le quatrième pli remporté, octroyant un privilège au gagnant, chaque joueur rassemble ses quatre cartes pour le décompte des points.
                 </p>
                 <h3><code>Exception</code></h3>
-                <p class="exception">Si aucun gagnant n'est désigné lors du premier pli, les joueurs entament un autre pli simultanément.<br>
-                    Par exemple, si le cœur est atout et que les joueurs jouent simultanément
+                <p class="exception">Si aucun gagnant n'est désigné lors du premier pli, les joueurs entament un autre pli simultanément&nbsp;:<br>
+                    par exemple, si le cœur est atout et que les joueurs jouent simultanément
                     <span style="font-family: 'rye'; color:black">9<span class="symbol">♠</span>-9<span class="symbol red">♦</span>-Q<span class="symbol">♠</span>-Q<span class="symbol">♣</span></span>
                 </p>
             </div>
@@ -84,86 +84,71 @@
             <div class="sectionbody">
                 <table class="score-table">
                     <colgroup>
-                        <col style="width: 20%;">
+                        <col style="width: 25%;">
                         <col style="width: 10%;">
-                        <col style="width: 20%;">
+                        <col style="width: 25%;">
                     </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Simple</th>
+                            <th>Points</th>
+                            <th>Double</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <p class="tableblock">Combo Basique</p>
+                                Paire<br>7<span class="symbol">♠</span>7<span class="symbol red">♦</span>
                             </td>
+                            <td class="points">2</td>
                             <td>
-                                <p class="tableblock">Points</p>
-                            </td>
-                            <td>
-                                <p class="tableblock">Combo Furtive</p>
+                                Double Paire<br>2<span class="symbol">♣</span>2<span class="symbol red">♦</span> J<span class="symbol">♣</span>J<span class="symbol red">♥</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p class="tableblock">Paire<br>7<span class="symbol">♠</span>7<span class="symbol red">♦</span></p>
+                                Suite<br>9<span class="symbol red">♥</span>10<span class="symbol red">♦</span>J<span class="symbol">♣</span>
                             </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">2</p>
-                            </td>
+                            <td class="points">3</td>
                             <td>
-                                <p class="tableblock">Duo d'Escroc<br>2<span class="symbol">♣</span>2<span class="symbol red">♦</span> J<span class="symbol">♣</span>J<span class="symbol red">♥</span></p>
+                                Suite Flush<br>9<span class="symbol red">♥</span>10<span class="symbol red">♥</span>J<span class="symbol red">♥</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p class="tableblock">Suite<br>9<span class="symbol red">♥</span>10<span class="symbol red">♦</span>J<span class="symbol">♣</span></p>
+                                Paire Suite<br>5<span class="symbol">♠</span>6<span class="symbol">♣</span>7<span class="symbol">♠</span>7<span class="symbol red">♦</span>
                             </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">3</p>
-                            </td>
+                            <td class="points">4</td>
                             <td>
-                                <!-- Pilleurs -->
-                                <p class="tableblock">Roublard<br>9<span class="symbol red">♥</span>10<span class="symbol red">♥</span>J<span class="symbol red">♥</span></p>
+                                Paires Flush<br>2<span class="symbol red">♥</span>2<span class="symbol red">♦</span> J<span class="symbol">♠</span>J<span class="symbol">♣</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p class="tableblock">Suite Double<br>5<span class="symbol">♠</span>6<span class="symbol">♣</span>7<span class="symbol">♠</span>7<span class="symbol red">♦</span></p>
+                                Sequence<br>3<span class="symbol">♠</span>4<span class="symbol">♠</span>5<span class="symbol red">♦</span>6<span class="symbol">♣</span>
                             </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">4</p>
-                            </td>
+                            <td class="points">5</td>
                             <td>
-                                <!-- Gémellombre -->
-                                <p class="tableblock">Agent Double<br>2<span class="symbol red">♥</span>2<span class="symbol red">♦</span></span> J<span class="symbol">♠</span>J<span class="symbol">♣</span></p>
+                                Sequence Flush<br>3<span class="symbol red">♦</span>4<span class="symbol red">♦</span>5<span class="symbol red">♦</span>6<span class="symbol red">♦</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p class="tableblock">Sequence<br>3<span class="symbol">♠</span>4<span class="symbol">♠</span>5<span class="symbol red">♦</span>6<span class="symbol">♣</span></p>
+                                Brelan<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span>
                             </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">5</p>
-                            </td>
+                            <td class="points">6</td>
                             <td>
-                                <p class="tableblock">Spectre<br>3<span class="symbol red">♦</span>4<span class="symbol red">♦</span>5<span class="symbol red">♦</span>6<span class="symbol red">♦</span></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="tableblock">Brelan<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span></p>
-                            </td>
-                            <td class="halign-center valign-center">
-                                <p class="tableblock points">6</p>
-                            </td>
-                            <td>
-                                <p class="tableblock">Quadricide<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span>Q<span class="symbol red">♥</span></p>
+                                Carré<br>Q<span class="symbol">♠</span>Q<span class="symbol red">♦</span>Q<span class="symbol">♣</span>Q<span class="symbol red">♥</span>
                             </td>
                         </tr>
                     </tbody>
+                    <!-- Duo Escroc, Roublard, Gemellombre, Spectre, Quadumbra -->
                 </table>
-                <p>Pour marquer des points, un joueur doit avoir en main l'une des combinaisons de quatre cartes suivantes.
-                    Une combinaison basique lui fait gagner les points indiqués.
-                    Une combinaison furtive lui permet de voler ce même nombre de points à un adversaire de son choix.</p>
-                <p>Les joueurs décomptent dans le sens horaire, en commençant par le joueur à gauche du gagnant.</p>
-                <p>Comme privilège, pour déterminer sa combinaison, le gagnant peut utiliser une carte de la main d'un adversaire, de la défausse ou l'atout.</p>
+                <p>Les joueurs marquent des points avec une de ces combinaisons en main. Les combinaisons doubles rapportent deux fois plus.</p>
+                <p>Les joueurs décomptent dans le sens horaire, en commençant par le joueur à gauche du gagnant.<br>
+                    Comme privilège, le gagnant peut choisir entre :</p>
+                <p><span class="chiffre">1. </span>Voler les points que vaut sa combinaison à un adversaire.</p>
+                <p><span class="chiffre">2. </span>Prendre une carte de la main d'un adversaire ou de la défausse pour marquer une meilleure combinaison.</p>
             </div>
 
             <div class="sectionbody">
@@ -176,10 +161,10 @@
                         <p>L'As peut être utilisé comme Un ou à la suite du Roi, selon la combinaison.</p>
                     </li>
                     <li>
-                        <p>Les joueurs ne peuvent pas répartir les points qu'ils volent entre les adversaires.</p>
+                        <p>Le score ne peut pas descendre en dessous de zero.</p>
                     </li>
                     <li>
-                        <p>Un joueur ne peut pas voler plus de points que ses adversaires n'en possèdent.</p>
+                        <p>Le gagnant ne peut pas répartir les points qu'il vole entre les adversaires.</p>
                     </li>
                 </ul>
             </div>
